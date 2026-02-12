@@ -2,7 +2,7 @@ import numpy as np
 import scipy
 
 
-def calculate_h(sigma = 0.1, num_features=4, beta=0.88):
+def calculate_h(sigma=0.1, num_features=4, beta=0.88):
     """
     Calculate h (bin width) like in the paper.
     """
@@ -87,6 +87,8 @@ def create_hash_grid(img, feature_maps, bin_width):
     np.add.at(H1, H1_indices, 1.0)
     np.add.at(Hf, H1_indices, img)
 
+    print(indices)
+
     return H1, Hf, indices
 
 
@@ -127,7 +129,7 @@ def denoise_hashnlm(noisy_image, sigma, num_features, beta):
     # Calculate bin width
     h = calculate_h(sigma, num_features, beta)
 
-	# Extract features
+    # Extract features
     if num_features == 4:
         features = extract_features_4(noisy_image)
     elif num_features == 6:

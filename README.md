@@ -12,7 +12,9 @@ Traditional NLM compares a pixel's neighborhood to every other neighborhood in t
 - Reconstruction: The denoised image is reconstructed by looking up the values in the blurred grid.
 
 ## Results
-![clock](./output/clock_4f.pdf)
+![clock](./output/clock_4f.svg)
+![clock](./output/clock_6fspatial.svg)
+![clock](./output/man_4f.svg)
 
 
 # Running instructions
