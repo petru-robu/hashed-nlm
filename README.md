@@ -1,4 +1,9 @@
 # Hashed NLM
+
+> **Part of a larger project:** this repository is the Hashed NLM component of [**non-local-means-denoising**](https://github.com/voaidesr/non-local-means-denoising), a joint project comparing several implementations of the Non-Local Means denoising algorithm (classic NLM, Monte Carlo NLM, KD-Tree Accelerated NLM and Hashed NLM).
+>
+> 📄 **Paper:** [*Different Implementations of Non-Local Means Image Denoising Algorithm*](./paper/nlm-denoising.pdf) by Robu Petru-Răzvan, Verzotti Matteo-Alexandru and Voaides-Negustor Robert-Ionuț.
+
 Implementation of Hashed Non-Local Means algorithm for image denoising.
 
 This algorithm is a fast approximation of Nonlocal Means (NLM) denoising, based on the paper "Hashed Nonlocal Means for Rapid Image Filtering" by Dowson and Salvado. While standard NLM is often too slow for practical use due to its exhaustive search patterns, this hashed approach achieves similar performance while being significantly faster.
